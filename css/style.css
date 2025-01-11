@@ -1,11 +1,95 @@
 :root {
+    --primary-dark-color: #7B1FA2;
     --primary-font-color: #9C27B0;
-    --primary-Dark-color: #7B1FA2;
+    --secondary-dark-color: #C0A300;
     --secondary-font-color: #FFCE00;
-    --secondary-Dark-color: #C0A300;
     --white: #fff;
     --black: #000;
 
-    --Primary-font: Staatliches, cursive;
+    --primary-font: 'Staatliches', cursive;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* Globales */
+body {
+    background-color: var(--primary-font-color);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    line-height: 1.5;
 
 }
+p{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary-dark-color);
+}
+a{
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1,h2,h3{
+    text-align: center;
+    color: var(--secondary-font-color);
+    font-family: var(--primary-font);
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header__logo{
+    margin: 3rem 0;
+}
+/*footer*/
+.footer{
+    background-color: var(--primary-dark-color);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+.footer__texto{
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 2.2rem;
+    color: var(--white);
+}
+/*navegacion-bloque*/
+.navegacion{
+    background-color: var(--primary-dark-color);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+
+}
+/*elemento*/
+.navegacion__enlace { 
+    font-family: var(--primary-font);
+    color: var(--white);
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+/*Modificador*/
+.navegacion__enlace--activo,
+.navegacion__enlace:hover {
+    color: var(--secondary-font-color);
+}
+
