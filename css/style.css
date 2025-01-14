@@ -1,5 +1,5 @@
 :root {
-    --primary-font-color: #9C27B0;
+    --primary-font-color: hsl(291, 64%, 42%);
     --primary-Dark-color: #7B1FA2;
     --secondary-font-color: #FFCE00;
     --secondary-Dark-color: #C0A300;
@@ -8,4 +8,49 @@
 
     --Primary-font: Staatliches, cursive;
 
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    *, *:before, *:after {
+    box-sizing: inherit;
+    }
+}
+/* Globales */
+body {
+    background-color: var(--primary-Dark-color);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary-font-color);
+}
+/* DEFINIR QUE LOS ENLACES NO TENGA INTERLINEADO*/
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1, h2, h3 {
+    text-align: center;
+    color: var(--primary-font-color);
+    font-family: var(--Primary-font);
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.4rem;
 }
